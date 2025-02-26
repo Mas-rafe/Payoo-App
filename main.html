@@ -10,15 +10,109 @@
 <body class ="bg-slate-800">
     <section class="max-w-md min-h-screen bg-gray-200   mx-auto py-6">
     <header>
-        <nav>
-            <div>
-                <img src="assets/Group.png" alt="">
+        <nav class="flex justify-around items-center">
+            <div class="flex justify-center items-center">
+               <img class="w-16" src="assets/Group.png" alt="">
+            <div class="">
+                  <h4 class="font-bold text-lg">$45000</h4>
+                  <p class="text-sm">Available Balance</p>
             </div>
+            </div>
+              <button class="btn">Logout</button>
+         </nav>
+        </header>
+        <main class=" mx-auto mt-6   ml-5 mr-5">
+         <div class="bg-base-100 rounded-lg px-4 pt-2 pb-4">
+            <h1 class="text-xl font-bold mt-4">Welcome to Payoo!</h1><br>
+            <p class="text-sm">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+       
+        <div class=" mt-4 cards grid grid-cols-3 mx-auto ">
+                <div class="box border-2 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md ">
+                    <img  class="items-center mt-3 mx-auto" src="assets/wallet1.png" alt="">
+                    <h4 class="text-sm">Add Money</h4>
+                </div> 
+                <card class="box border-2 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md">
+                    <img class="items-center mt-3 mx-auto" src="assets/send1.png" alt="">
+                    <h4>Cashout</h4>
+                </card>
+               
+                <card class="box border-2  cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md">
+                    <img class="items-center  mt-3 mx-auto" src="assets/money1.png" alt="">
+                    <h4>Transfer Money</h4>
+                </card>
+                
+                <card class="box border-2 mt-3 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded">
+                     <img class="items-center mt-3 mx-auto" src="assets/bonus1.png" alt="">
+                    <h4>Get bonus</h4>
+                </card>
+                <card class="box border-2 mt-3 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md">
+                    <img class="items-center mt-3 mx-auto" src="assets/purse1.png" alt="">
+                    <h4>Pay bill</h4>
+                </card>
+                <card class="box border-2 mt-3 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md">
+                     <img class="items-center mt-3 mx-auto" src="assets/transaction1.png" alt="">
+                    <h4>transactions</h4>
+                </card> 
+         </div>
+         </div>
+        <br>
+         <section>
+            <h2 class="text-lg font-bold">Add Money</h2><br>
+           <div>
+            <div class=" ">
+                <div class=" flex-col lg:flex-row-reverse">
+                
+                  <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <legend>Select Bank</legend>
+                        <select class="select select-info w-full max-w-md rounded-full">
+                            <option disabled selected>Select Bank</option>
+                            <option value="Nagad">Nagad</option>
+                            <option value="Bkash">Bkash</option>
+                            <option value="Nexus">Nexus</option>
+                            <option value="Rocket">Rocket</option>
+                            <option value="DBBL">DBBL</option>
 
-        </nav>
+                          </select>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Select A Bank</span>
+                        </label>
+                        <input type="email" placeholder="Select Bank" class="input input-bordered rounded-full bg-gray-100" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Bank Account Number</span>
+                        </label>
+                        <input type="password" placeholder="Enter 11 Digit Account Number" class="input input-bordered rounded-full bg-gray-100" required />
+                        </div>
+                        <div class="form-control">  
+                        <label class="label">
+                            <span class="label-text">Amount To Add</span>
+                         </label>
+                         <input type="email" placeholder="Add Amount To Withdraw" class="input input-bordered rounded-full bg-gray-100" required />
+                        </div>
+                        <div class="form-control">
+                         <label class="label">
+                            <span class="label-text">Pin Number</span>
+                         </label>
+                         <input type="email" placeholder="Enter 4 Digit Pin Number" class="input input-bordered rounded-full bg-gray-100" required />
+                       </div>
+                      <div class="form-control mt-6">
+                        <button class="btn btn-primary rounded-full ">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+           </div>       
+        </section>
+                </main>
+               
 
-    </header>
-    </section>
-    
+           
+          
+                        
+
 </body>
 </html>
