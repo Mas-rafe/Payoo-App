@@ -8,6 +8,7 @@ document.getElementById("btn-add-money")
     const balance = document.getElementById("balance")
     .innerText;
           const mainBalance = parseFloat(balance);
+          
     if(addAmount && addPin){
 
         if( pin.length === 4){
