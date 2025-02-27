@@ -16,11 +16,11 @@ document.getElementById("btn-add-money")
         console.log(sum)
         }
         else{
-             console.log("need valid pin")
+             alert("need valid pin")
         } 
     }
     else{
-        console.log("enter amount")
+        alert("enter amount")
     }
 
     window.location.href
