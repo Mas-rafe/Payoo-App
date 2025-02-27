@@ -7,7 +7,7 @@ document.getElementById("btn-login")
     const inputText = document.getElementById("input-text").
     value;
     //const newInputText = parseInt(inputText);
-    if(inputNum.length >= 5 && inputNum.length <= 10){
+    if(inputNum.length === 11){
        if(inputText.length === 4){
         window.location.href="./main.html"
         //console.log("you are welcome");
