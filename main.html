@@ -14,7 +14,7 @@
             <div class="flex justify-center items-center">
                <img class="w-16" src="assets/Group.png" alt="">
             <div class="">
-                  <h4 class="font-bold text-lg">$45000</h4>
+                  <h4 class="font-bold text-lg">$ <span id="balance" >45000</span> </h4>
                   <p class="text-sm">Available Balance</p>
             </div>
             </div>
@@ -27,11 +27,11 @@
             <p class="text-sm">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
        
         <div class=" mt-4 cards grid grid-cols-3 mx-auto ">
-                <div class="box border-2 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md ">
+                <div id="add-money" class="box border-2 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md ">
                     <img  class="items-center mt-3 mx-auto" src="assets/wallet1.png" alt="">
                     <h4 class="text-sm">Add Money</h4>
                 </div> 
-                <card class="box border-2 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md">
+                <card id="cashout" class="box border-2 cursor-pointer shadow-lg border-slate-300 text-center p-2 w-28 h-24 border-solid  rounded-md">
                     <img class="items-center mt-3 mx-auto" src="assets/send1.png" alt="">
                     <h4>Cashout</h4>
                 </card>
@@ -56,7 +56,7 @@
          </div>
          </div>
         <br>
-         <section>
+         <section id="addMoney">
             <h2 class="text-lg font-bold">Add Money</h2><br>
            <div>
             <div class=" ">
@@ -65,7 +65,7 @@
                   <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
                     <form class="card-body">
                         <legend>Select Bank</legend>
-                        <select class="select select-info w-full max-w-md rounded-full">
+                        <select class="select select-info w-full max-w-md rounded-full" required>
                             <option disabled selected>Select Bank</option>
                             <option value="Nagad">Nagad</option>
                             <option value="Bkash">Bkash</option>
@@ -74,32 +74,27 @@
                             <option value="DBBL">DBBL</option>
 
                           </select>
-                      <div class="form-control">
-                        <label class="label">
-                          <span class="label-text">Select A Bank</span>
-                        </label>
-                        <input type="email" placeholder="Select Bank" class="input input-bordered rounded-full bg-gray-100" required />
-                      </div>
+                      
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Bank Account Number</span>
                         </label>
-                        <input type="password" placeholder="Enter 11 Digit Account Number" class="input input-bordered rounded-full bg-gray-100" required />
+                        <input type="number" placeholder="Enter 11 Digit Account Number" class="input input-bordered rounded-full bg-gray-100" required />
                         </div>
                         <div class="form-control">  
                         <label class="label">
                             <span class="label-text">Amount To Add</span>
                          </label>
-                         <input type="email" placeholder="Add Amount To Withdraw" class="input input-bordered rounded-full bg-gray-100" required />
+                         <input id="add-amount" type="number" placeholder="Add to Amount " class="input input-bordered rounded-full bg-gray-100" required />
                         </div>
                         <div class="form-control">
                          <label class="label">
                             <span class="label-text">Pin Number</span>
                          </label>
-                         <input type="email" placeholder="Enter 4 Digit Pin Number" class="input input-bordered rounded-full bg-gray-100" required />
+                         <input id="pin" type="number"  placeholder="Enter 4 Digit Pin Number" class="input input-bordered rounded-full bg-gray-100" required />
                        </div>
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary rounded-full ">Login</button>
+                        <button id="btn-add-money" class="btn btn-primary rounded-full ">Add Money</button>
                       </div>
                     </form>
                   </div>
@@ -107,12 +102,51 @@
               </div>
            </div>       
         </section>
+
+    <!--Cashout Section-->
+    <section id="cash-out" >
+        <h2 class="text-lg font-bold">Cash Out</h2><br>
+       <div>
+        <div class=" ">
+            <div class=" flex-col lg:flex-row-reverse">
+            
+              <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+                <form class="card-body">
+                    <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Agent Number</span>
+                    </label>
+                    <input type="number" placeholder="Enter 11 Digit Number" class="input input-bordered rounded-full bg-gray-100" required />
+                    </div>
+                    <div class="form-control">  
+                    <label class="label">
+                        <span class="label-text">Amount</span>
+                     </label>
+                     <input id="add-amount" type="number" placeholder="Enter amount to withdraw " class="input input-bordered rounded-full bg-gray-100" required />
+                    </div>
+                    <div class="form-control">
+                     <label class="label">
+                        <span class="label-text">Pin Number</span>
+                     </label>
+                     <input id="pin" type="number"  placeholder="Enter 4 Digit Pin Number" class="input input-bordered rounded-full bg-gray-100" required />
+                   </div>
+                  <div class="form-control mt-6">
+                    <button id="btn-add-money" class="btn btn-primary rounded-full ">Withdraw Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+       </div>       
+    </section>
+
                 </main>
                
 
            
           
                         
-
+<script src="javascript/addMoney.js"></script>
+<script src="javascript/toggle.js"></script>
 </body>
 </html>
