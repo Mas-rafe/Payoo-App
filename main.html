@@ -14,7 +14,7 @@
             <div class="flex justify-center items-center">
                <img class="w-16" src="assets/Group.png" alt="">
             <div class="">
-                  <h4 class="font-bold text-lg">$ <span id="balance" >45000</span> </h4>
+                  <h4 class="font-bold text-lg">$ <span id="balance" >0</span> </h4>
                   <p class="text-sm">Available Balance</p>
             </div>
             </div>
@@ -65,7 +65,7 @@
                   <div class="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
                     <form class="card-body">
                         <legend>Select Bank</legend>
-                        <select class="select select-info w-full max-w-md rounded-full" required>
+                        <select id="select-bank" class="select select-info w-full max-w-md rounded-full" required>
                             <option disabled selected>Select Bank</option>
                             <option value="Nagad">Nagad</option>
                             <option value="Bkash">Bkash</option>
@@ -79,7 +79,7 @@
                         <label class="label">
                           <span class="label-text">Bank Account Number</span>
                         </label>
-                        <input type="number" placeholder="Enter 11 Digit Account Number" class="input input-bordered rounded-full bg-gray-100" required />
+                        <input id="account-number" type="number" placeholder="Enter 11 Digit Account Number" class="input input-bordered rounded-full bg-gray-100" required />
                         </div>
                         <div class="form-control">  
                         <label class="label">
@@ -148,5 +148,7 @@
                         
 <script src="javascript/addMoney.js"></script>
 <script src="javascript/toggle.js"></script>
+<!--<script src="javascript/nothing.js"></script>-->
+
 </body>
 </html>
