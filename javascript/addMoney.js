@@ -23,7 +23,7 @@ document.getElementById("btn-add-money")
                
                
    }else {
-       alert("need vlid pin")
+       alert("need valid pin")
    } 
        }else {
            alert("need valid amount")
